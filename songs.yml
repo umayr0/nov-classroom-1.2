@@ -1,0 +1,75 @@
+music:
+- artist:
+    main_artist: Rob Pajama
+    feat: [Dunk Honeybee, No Belles]
+  album_name: Doctor in the House
+  year_released: 2019
+  rating: 7
+  runtime: "14:32"
+  genre: Electonic Music
+  songs:
+    song1:
+      name: Going Magnet
+      runtime: "02:56"
+    song2:
+      name: Automatic Faith
+      runtime: "03:15"
+    song3:
+      name: Good Lines
+      runtime: "02:28"
+    song4:
+      name: Little Light
+      runtime: "03:35"
+    song5:
+      name: Still Need Rider
+      runtime: "02:18"
+
+- artist:
+    main_artist: Figment of Ruins
+    feat: NA
+  album_name: Committee of Despair
+  year_released: 2017
+  rating: 9
+  runtime: "15:50"
+  genre: Nu Metal
+  songs:
+    song1:
+      name: Naïve Move
+      runtime: "02:53"
+    song2:
+      name: Progresive Train
+      runtime: "02:44"
+    song3:
+      name: Ace of Teenage
+      runtime: "03:36"
+    song4:
+      name: Little Light
+      runtime: "03:01"
+    song5:
+      name: Dreams of Outside the Box
+      runtime: "03:36"
+
+- artist:
+    main_artist: Casey Griffin
+    feat: Carter Shawn
+  album_name: With Feeling
+  year_released: 2020
+  rating: 6
+  runtime: "14:12"
+  genre: Country 
+  songs:
+    song1:
+      name:
+      runtime:
+    song2:
+      name:
+      runtime:
+    song3: 
+      name:
+      runtime:
+    song4:
+      name:
+      runtime:
+    song5:
+      name:
+      runtime:
