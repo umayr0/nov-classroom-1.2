@@ -29,14 +29,14 @@ jobs:
     - run: echo 'Commit message ${{ github.event.head_commit.message }}'
     - run: echo 'job name ${{ github.job }}'
     
-    clone_job:
-      runs-on: ubuntu-latest
-      steps:
-      - run: ls -a
-      - name: Checkout
-        uses: actions/checkout@v2 # Default repo to clone down / checkout is our one
-      - run: echo '${{github.repository}}'
-      - run: ls -a
+  clone_job:
+    runs-on: ubuntu-latest
+    steps:
+    - run: ls -a
+    - name: Checkout
+      uses: actions/checkout@v2 # Default repo to clone down / checkout is our one
+    - run: echo '${{github.repository}}'
+    - run: ls -a
 
     
 
