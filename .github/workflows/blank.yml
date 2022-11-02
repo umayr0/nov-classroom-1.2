@@ -49,6 +49,18 @@ jobs:
     - run: mkdir hey
     - run: mv hey.txt hey
     
+  env_job:
+    runs-on: ubuntu-latest
+    env:
+      LOCAL_VAR: "This is locally available"
+    steps:
+    - name: Running global variable
+      run: echo $GLOBAL_VAR
+    - name: Running local variable
+      run: echo $LOCAL_VAR
+    - name: Running Secret Var
+      run: echo "${{secrets.SECRET_NAME}}"
+    
     
 
     
