@@ -37,6 +37,19 @@ jobs:
       uses: actions/checkout@v2 # Default repo to clone down / checkout is our one
     - run: echo '${{github.repository}}'
     - run: ls -a
+    
+  exercise_1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2 # Default repo to clone down / checkout is our one
+    - run: python3 hello.py
+    - run: touch hey.txt
+    - run: rm file.txt
+    - run: mkdir hey
+    - run: mv hey.txt hey
+    
+    
 
     
 
