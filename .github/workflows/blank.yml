@@ -20,10 +20,9 @@ jobs:
     steps: 
     # echo outputs some text, by default this is to the terminal but can also add text to a file
     - run: echo 'Hello World!'
-    - run: echo $pwd # Our runner has inbuilt variables we can access
-    - run: echo '$pwd' # Our runner has inbuilt variables we can access
-    - run: echo $ls # Our runner has inbuilt variables we can access
-    - run: $ls # Our runner has inbuilt variables we can access
-    - run: ${ls} # Our runner has inbuilt variables we can access
     - run: echo "${PWD}" # Our runner has inbuilt variables we can access
+    - run: echo "${LS}" # Our runner has inbuilt variables we can access
+    - run: echo "${ls}" # Our runner has inbuilt variables we can access
+    - run: echo "${LS -A}" # Our runner has inbuilt variables we can access
+    - run: echo "${ls -a}" # Our runner has inbuilt variables we can access
 
