@@ -1,3 +1,6 @@
+# Exercise: In your repo, using Actions set up a workflow which prints "Hello World", prints out the current working directory path and the contents of the current location 
+# Stretch goal - Create a command which prints out the name of the job and the commit message
+
 # This is an IDE for creating a workflow with .yaml
 # Workflows are processes or commands you want to run when a certain thing happens
 
@@ -22,4 +25,9 @@ jobs:
     - run: echo 'Hello World!'
     - run: echo "${PWD}" # Our runner has inbuilt variables we can access
     - run: ls # Our runner has inbuilt variables we can access
+    - run: ls -a # Our runner has inbuilt variables we can access
+    - run: echo 'Commit message ${{ github.event.head_commit.message }}'
+    - run: echo 'job name ${{ github.job }}'
+    
+    
 
