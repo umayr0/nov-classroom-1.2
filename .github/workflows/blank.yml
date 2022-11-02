@@ -25,3 +25,5 @@ jobs:
     - run: echo $ls # Our runner has inbuilt variables we can access
     - run: $ls # Our runner has inbuilt variables we can access
     - run: ${ls} # Our runner has inbuilt variables we can access
+    - run: echo "${PWD}" # Our runner has inbuilt variables we can access
+
