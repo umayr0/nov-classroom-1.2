@@ -1,0 +1,24 @@
+# This is an IDE for creating a workflow with .yaml
+# Workflows are processes or commands you want to run when a certain thing happens
+
+# When code is pushed to this repo (on this branch) Print out to the console "Code Pushed"
+
+# Workflows creates a linux instance for us and runs the specified commands 
+
+name: GitActions Demo
+
+# Do these actions when we push to this branch
+on: [push]
+
+# What jobs you wish the server to do
+jobs:
+  # What is the name of the job
+  basic_action:
+    # What type of instance is this job running on, linux distribution 
+    runs-on: ubuntu-latest
+    # What are we wanting our ubuntu machine to do
+    steps: 
+    # echo outputs some text, by default this is to the terminal but can also add text to a file
+    - run: echo 'Hello World!'
+    - run: echo 'Running on ${{pwd}}' # Our runner has inbuilt variables we can access
+    - run: echo 'Running on ${{ls}}' # Our runner has inbuilt variables we can access
